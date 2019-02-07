@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="diez">10dp</dimen>
+    <dimen name="diezyseis">16dp</dimen>
+    <dimen name="veinte">20dp</dimen>
+    <dimen name="treinta">30dp</dimen>
+    <dimen name="cuarenta">40dp</dimen>
+    <dimen name="cincuenta">50dp</dimen>
+    <dimen name="sesenta">60dp</dimen>
+    <dimen name="setenta">70dp</dimen>
+    <dimen name="ochenta">80dp</dimen>
+    <dimen name="noventa">90dp</dimen>
+    <dimen name="ciemt">100dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

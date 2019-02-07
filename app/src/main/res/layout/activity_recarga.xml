@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiencolor"
+    tools:context=".Recarga.RecargaActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include
+            layout="@layout/layout_action_bar_back"
+            android:layout_width="match_parent"
+            android:layout_height="51dp" />
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/cincuenta"
+            android:layout_marginTop="@dimen/cincuenta"
+            android:layout_marginRight="@dimen/cincuenta"
+            android:layout_marginBottom="@dimen/cincuenta"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:paddingTop="@dimen/noventa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/noventa"
+                    android:layout_marginRight="@dimen/noventa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccentWhite"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/veinte"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_phone_iphone_black_24dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tlphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorAccentWhite"
+                        app:boxStrokeColor="@color/colorAccentWhite">
+
+                        <EditText
+                            android:id="@+id/editTextPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/editTextPass"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textColor="@color/colorAccentWhite"
+                            android:textColorHint="@color/colorAccentWhite"
+                            android:hint="Telefono"
+                            android:textSize="@dimen/diezyseis" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/veinte"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_monetization_on_black_24dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tlcantidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorAccentWhite"
+                        app:boxStrokeColor="@color/colorAccentWhite">
+
+                        <EditText
+                            android:id="@+id/editTextCantidad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Cantidad"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorAccentWhite"
+                            android:textColorHint="@color/colorAccentWhite"
+                            android:textSize="@dimen/diezyseis" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:text="VENTA DE 3.0 A 100.0 CON INCREMENTO DE 1.0"
+                    android:textColor="@color/colorAccentWhite"
+                    android:textSize="@dimen/diez"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnContinuar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundcornerbutotn"
+                    android:text="continuar"
+                    android:textColor="@color/colorAccentWhite" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

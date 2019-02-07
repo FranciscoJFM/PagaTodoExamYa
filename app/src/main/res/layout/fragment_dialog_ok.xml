@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bordercolorlayout"
+    android:orientation="vertical"
+    android:theme="@style/Animation.AppCompat.Dialog">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/diezyseis"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/colorAccentWhite"
+            android:textSize="@dimen/diez"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/diezyseis"
+            android:paddingBottom="@dimen/diezyseis"
+            android:text="La recarga se ha realizado con éxito" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/diezyseis"
+            android:paddingBottom="@dimen/diezyseis"
+            android:src="@drawable/ic_done" />
+
+        <Button
+            android:id="@+id/btnaceptarok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/roundcornerbutotn"
+            android:gravity="center"
+            android:paddingTop="@dimen/diezyseis"
+            android:paddingBottom="@dimen/diezyseis"
+            android:text="ACEPTAR"
+            android:textColor="@color/colorAccentWhite" />
+
+    </LinearLayout>
+</LinearLayout>

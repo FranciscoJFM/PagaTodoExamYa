@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bordercolorlayout"
+    android:orientation="vertical"
+    android:theme="@style/Animation.AppCompat.Dialog">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:paddingTop="8dp"
+        android:orientation="horizontal">
+              <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/diezyseis"
+            android:src="@drawable/ic_user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user"
+            android:textColor="@color/colorAccentWhite"
+            android:textSize="@dimen/diez"
+            android:textStyle="normal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/cuarenta"
+            android:src="@drawable/ic_clock" />
+
+        <TextView
+            android:id="@+id/tvHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hora"
+            android:textSize="@dimen/diez"
+            android:textColor="@color/colorAccentWhite"
+            android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/cuarenta"
+            android:src="@drawable/ic_date" />
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fecha"
+            android:textSize="@dimen/diez"
+            android:textColor="@color/colorAccentWhite"
+            android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/veinte">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Se realizara una recarga"
+            android:textColor="@color/colorAccentWhite"
+            android:textSize="@dimen/diezyseis"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginRight="140dp"
+            android:background="@color/colorAccentWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Numero telefonico"
+            android:textColor="@color/colorAccentWhite"
+            android:textSize="@dimen/diez"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/numtel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="5530202030"
+            android:textColor="@color/colorAccentWhite"
+            android:textSize="@dimen/diezyseis"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Monto a recargar"
+            android:textColor="@color/colorAccentWhite"
+            android:textSize="@dimen/diez"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/monto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="$200.00"
+            android:textColor="@color/colorAccentWhite"
+            android:textSize="@dimen/diezyseis"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Realice su pago oportunamente en la sucursal de referencia"
+            android:textColor="@color/colorAccentWhite"
+            android:textSize="@dimen/diez"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="@dimen/diez"
+            android:paddingBottom="@dimen/diez"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btncancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcornerbutotn"
+                android:textColor="@color/colorAccentWhite"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:text="CANCELAR"/>
+            <Button
+                android:id="@+id/btnaceptar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundcornerbutotn"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorAccentWhite"
+                android:text="ACEPTAR"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
